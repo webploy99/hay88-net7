@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hay88 -【Trang chủ chính thức】- Welcome to Hay88.com</title>
+    <link rel="icon" href="./images/icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- maquee slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js" integrity="sha512-JCRiGqeZmFnnSl3E68K2QpL8Pwvp4PKAqekg41WWUfjqCnKJEv1DvZJdi76q/XFt6VzZ3V4bCE51NkDQ+dOJKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- splide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+</head>
+<body>
+    <!-- header dropdown when scroll -->
+    <header id="navbar" class="header w-full fixed top-0 left-0 z-50 duration-500">
+        <div class="bg-[#292e3b] tracking-wide p-3.5 z-40 opacity-90">
+            <div class="max-w-[1080px] m-auto flex  justify-center md:justify-between items-center text-white font-semibold relative">
+                <div class="menu-icon absolute left-0 md:hidden text-2xl" onclick="OpenNav()">
+                    <ion-icon name="menu-outline" class="border p-1 rounded-md"></ion-icon>
+                </div>
+    
+                <div onclick="url()" class="logo max-w-[200px] cursor-pointer">
+                    <img src="./images/logo.png">
+                </div>
+
+                <nav id="Nav">
+                    <div class="md:hidden flex justify-end text-3xl p-2 font-bold w-full h-full bg-gray-600 opacity-80" onclick="CloseNav()">
+                        <ion-icon name="close"></ion-icon>
+                    </div>
+                    <ul class="h-full opacity-100 md:relative absolute top-0 z-50 flex flex-col gap-0 md:gap-5 md:flex-row md:p-5 text-[14.5px] bg-gray-50 text-gray-700 md:text-white md:bg-transparent divide-y divide-slate-200 *:py-4 *:md:py-0 *:md:border-none">
+                        <!-- search -->
+                        <div class="mt-10 md:hidden p-4 border-b">
+                            <div class="border flex justify-center items-center">
+                                <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner" placeholder="Tiềm Kiếm ..." required />
+                                <button class="bg-orange-500 text-white p-2">
+                                    <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- menu -->
+                        <li><a href=" https://www.hay8833.com/?inviteCode=3128320" class="p-5 md:p-0 mt-20 md:mt-0 hover:text-orange-300 duration-300">TRANG CHỦ</a></li>
+                        <li><a href=" https://www.hay8833.com/?inviteCode=3128320" class="p-5 md:p-0 hover:text-orange-300 duration-300">KHUYẾN MÃI</a></li>
+                        <li><a href=" https://www.hay8833.com/?inviteCode=3128320" class="p-5 md:p-0 hover:text-orange-300 duration-300">ĐĂNG KÝ</a></li>
+                        <li><a href=" https://www.hay8833.com/?inviteCode=3128320" class="p-5 md:p-0 hover:text-orange-300 duration-300">HƯỚNG DẪN</a></li>
+                        <li><a href=" https://www.hay8833.com/?inviteCode=3128320" class="p-5 md:p-0 hover:text-orange-300 duration-300">LIÊN HỆ</a></li>
+
+                        <!-- icon -->
+                        <div class="md:hidden mt-1">
+                            <div class="p-4">
+                                <button onclick="url()">  <ion-icon name="logo-facebook" class="text-4xl text-blue-800"></ion-icon> </button>
+                                <button onclick="url()">  <ion-icon name="logo-twitter" class="text-2xl p-1 text-white bg-indigo-800 border rounded-full"></ion-icon> </button>
+                                <button onclick="url()">  <ion-icon name="mail-outline" class="text-2xl p-1 text-white bg-gray-900 border rounded-full"></ion-icon> </button>
+                                <button onclick="url()">  <ion-icon name="call-outline" class="text-2xl p-1 text-white bg-green-500 border rounded-full"></ion-icon> </button>
+                                <button onclick="url()">  <ion-icon name="logo-pinterest" class="text-4xl text-red-500"></ion-icon> </button>
+                                <button onclick="url()">  <ion-icon name="logo-youtube" class="text-2xl p-1 text-white bg-red-500 border rounded-full"></ion-icon> </button>
+                                <button onclick="url()">  <ion-icon name="navigate" class="text-2xl p-1 text-white bg-blue-500 border rounded-full"></ion-icon> </button>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+    
+                <div class="text-white hidden md:block text-[13.5px]">
+                    <button onclick="url()" class="bg-red-600 px-4 py-1.5 rounded-full hover:bg-red-800 duration-300">ĐĂNG KÝ</button>
+                    <button onclick="url()" class="bg-cyan-800 px-4 py-1.5 ml-2 rounded-full hover:bg-cyan-950 duration-300">ĐĂNG NHẬP</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-white flex gap-3 justify-center font-semibold items-center md:hidden bg-gray-300 text-[13.5px]">
+            <button onclick="url()" class="bg-[#b20000] px-4 py-1.5 rounded-full border">ĐĂNG KÝ</button>
+            <button onclick="url()" class="bg-[#446084] px-4 py-1.5 rounded-full border">ĐĂNG NHẬP</button>
+        </div>
+    </header>
+
+    <!-- header -->
+    <header class="w-full z-50">
+        <div class="bg-[#292e3b] tracking-wide p-3.5 z-40">
+            <div class="max-w-[1080px] m-auto flex  justify-center md:justify-between items-center text-white font-semibold relative">
+                <div class="menu-icon absolute left-0 md:hidden text-2xl" onclick="OpenNav()">
+                    <ion-icon name="menu-outline" class="border p-1 rounded-md"></ion-icon>
+                </div>
+    
+                <div onclick="url()" class="logo max-w-[200px] cursor-pointer">
+                    <img src="./images/logo.png">
+                </div>
+
+                <nav id="Nav">
+                    <div class="md:hidden flex justify-end text-3xl p-2 font-bold w-full h-full bg-gray-600 opacity-80" onclick="CloseNav()">
+                        <ion-icon name="close"></ion-icon>
+                    </div>
+                    <ul class="h-full opacity-100 md:relative absolute top-0 z-50 flex flex-col gap-0 md:gap-5 md:flex-row md:p-5 text-[14.5px] bg-gray-50 text-gray-700 md:text-white md:bg-transparent divide-y divide-slate-200 *:py-4 *:md:py-0 *:md:border-none">
+                        <!-- search -->
+                        <div class="mt-10 md:hidden p-4 border-b">
+                            <div class="border flex justify-center items-center">
+                                <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner" placeholder="Tiềm Kiếm ..." required />
+                                <button class="bg-orange-500 text-white p-2">
+                                    <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- menu -->
+                        <li><a href=" https://www.hay8833.com/?inviteCode=3128320" class="p-5 md:p-0 mt-20 md:mt-0 hover:text-orange-300 duration-300">TRANG CHỦ</a></li>
+                        <li><a href=" https://www.hay8833.com/?inviteCode=3128320" class="p-5 md:p-0 hover:text-orange-300 duration-300">KHUYẾN MÃI</a></li>
+                        <li><a href=" https://www.hay8833.com/?inviteCode=3128320" class="p-5 md:p-0 hover:text-orange-300 duration-300">ĐĂNG KÝ</a></li>
+                        <li><a href=" https://www.hay8833.com/?inviteCode=3128320" class="p-5 md:p-0 hover:text-orange-300 duration-300">HƯỚNG DẪN</a></li>
+                        <li><a href=" https://www.hay8833.com/?inviteCode=3128320" class="p-5 md:p-0 hover:text-orange-300 duration-300">LIÊN HỆ</a></li>
+
+                        <!-- icon -->
+                        <div class="md:hidden mt-1">
+                            <div class="p-4">
+                                <button onclick="url()">  <ion-icon name="logo-facebook" class="text-4xl text-blue-800"></ion-icon> </button>
+                                <button onclick="url()">  <ion-icon name="logo-twitter" class="text-2xl p-1 text-white bg-indigo-800 border rounded-full"></ion-icon> </button>
+                                <button onclick="url()">  <ion-icon name="mail-outline" class="text-2xl p-1 text-white bg-gray-900 border rounded-full"></ion-icon> </button>
+                                <button onclick="url()">  <ion-icon name="call-outline" class="text-2xl p-1 text-white bg-green-500 border rounded-full"></ion-icon> </button>
+                                <button onclick="url()">  <ion-icon name="logo-pinterest" class="text-4xl text-red-500"></ion-icon> </button>
+                                <button onclick="url()">  <ion-icon name="logo-youtube" class="text-2xl p-1 text-white bg-red-500 border rounded-full"></ion-icon> </button>
+                                <button onclick="url()">  <ion-icon name="navigate" class="text-2xl p-1 text-white bg-blue-500 border rounded-full"></ion-icon> </button>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+    
+                <div class="text-white hidden md:block text-[13.5px]">
+                    <button onclick="url()" class="bg-red-600 px-4 py-1.5 rounded-full hover:bg-red-800 duration-300">ĐĂNG KÝ</button>
+                    <button onclick="url()" class="bg-cyan-800 px-4 py-1.5 ml-2 rounded-full hover:bg-cyan-950 duration-300">ĐĂNG NHẬP</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-white flex gap-3 justify-center font-semibold items-center md:hidden bg-gray-300 text-[13.5px]">
+            <button onclick="url()" class="bg-[#b20000] px-4 py-1.5 rounded-full border">ĐĂNG KÝ</button>
+            <button onclick="url()" class="bg-[#446084] px-4 py-1.5 rounded-full border">ĐĂNG NHẬP</button>
+        </div>
+    </header>
+
+    <!-- main -->
+    <div class="main p-4 shadow">
+        <!-- slider -->
+        <section class="splide max-w-7xl m-auto py-10 px-5" aria-labelledby="carousel-heading">            
+            <div class="splide__track text-white">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="./images/slide1.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/slide2.jpg">
+                    </li> 
+                    <li class="splide__slide">
+                        <img src="./images/slide3.jpg">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/slide4.jpg">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- button click -->
+        <div>
+            <div class="mt-10">
+                <div class="grid sm:grid-cols-3 gap-8 md:gap-0 place-items-center text-lg text-[#6d839f] font-semibold">
+                    <div class="">
+                        <button onclick="url()" class="flex justify-center items-center duration-300"><img src="./images/dangky.png" class="w-10/12 sm:w-full lg:w-11/12 hover:scale-105 duration-500"></button>
+                    </div>
+                    <div class="">
+                        <button onclick="url()" class="flex justify-center items-center duration-300"><img src="./images/taiapp.png" class="w-10/12 sm:w-full lg:w-11/12 hover:scale-105 duration-500"></button>
+                    </div>
+                    <div class="">
+                        <button onclick="url()" class="flex justify-center items-center duration-300"><img src="./images/khuyenmai.png" class="w-10/12 sm:w-full lg:w-11/12 hover:scale-105 duration-500"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <div class="flex justify-center items-center text-lg text-[#b20000] font-semibold">
+                    <button onclick="url()" class="duration-300 flex justify-center items-center "><img src="./images/nhancode.png" class="w-10/12 sm:w-4/12 hover:scale-105 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-500"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- maquee -->
+        <div class="overflow-hidden max-w-7xl mx-auto mt-10">
+            <div class="marquee py-3 inline-flex space-x-4 max-w-full items-center *:bg-gradient-to-b *:from-indigo-600 *:via-yellow-600 *:to-pink-600 *:cursor-pointer z-10 " x-data="Marquee({speed: 1, spaceX: 4, dynamicWidthElements: true})">
+                
+                <div onclick="url()" class="flex flex-col shrink-0 overflow-hidden">
+                    <img src="./images/icon1.png" class="transition duration-500 hover:scale-110 ease-in-out p-3">
+                </div>
+                <div onclick="url()" class="flex flex-col shrink-0 overflow-hidden">
+                    <img src="./images/icon2.png" class="transition duration-500 hover:scale-110 ease-in-out p-3">
+                </div>
+                <div onclick="url()" class="flex flex-col shrink-0 overflow-hidden">
+                    <img src="./images/icon3.png" class="transition duration-500 hover:scale-110 ease-in-out p-3">
+                </div>
+                <div onclick="url()" class="flex flex-col shrink-0 overflow-hidden">
+                    <img src="./images/icon4.png" class="transition duration-500 hover:scale-110 ease-in-out p-3">
+                </div>
+                <div onclick="url()" class="flex flex-col shrink-0 overflow-hidden">
+                    <img src="./images/icon5.png" class="transition duration-500 hover:scale-110 ease-in-out p-3">
+                </div>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div class="mt-10">
+            <span class="text-2xl font-semibold text-[#1e73be] block text-center">Hay88 ⭐️ Link Truy Cập Nhà Cái Hay88 Mới Nhất 2024</span>
+
+            <p class="mt-5"><p onclick="url()" class="text-orange-400 font-semibold inline-block cursor-pointer">Hay88</p> luôn nằm trong top các nhà cái chất lượng và đáng tin cậy hàng đầu châu Á. Sân chơi này xuất hiện đã tạo ra một cơn địa chấn trong làng cá cược trực tuyến. Hàng triệu game thủ đổ về nhà cái mỗi ngày. Mời anh em cùng tham khảo một số thông tin chi tiết về địa chỉ giải trí mang đẳng cấp quốc tế qua nội dung sau. </p>
+            
+            <span class="text-xl font-semibold text-[#1e73be] mt-5 block">Khám phá vài nét cơ bản về nhà cái Hay88 </span>
+            <p class="mt-3"><span class="text-gray-900 font-semibold">Hay88</span> có mặt trên thị trường vào năm 2017 và nhanh chóng thổi một làn gió mới vào ngành cá cược trực tuyến. Vào thời điểm mới ra mắt, nhà cái này chỉ cung cấp một số trò chơi casino đơn giản và cơ bản. Tuy nhiên, với sự nỗ lực không ngừng của đội ngũ phát triển, các sản phẩm cá cược đã được bổ sung liên tục. </p>
+
+            <!-- images 1 -->
+            <div class="mt-5 flex flex-col justify-center items-center w-full">
+                <div onclick="url()" class="cursor-pointer">
+                    <img src="./images/photo1.jpg">
+                    <span class="italic p-2 bg-gray-100 block text-center">Giới thiệu tổng quan Hay88</span>
+                </div>
+            </div>
+
+            <p class="mt-7">Cơ sở hạ tầng của website cũng được cải thiện đáng kể để giúp tối ưu hoá trải nghiệm khách hàng. Nhà cái đầu tư mạnh mẽ vào việc tích hợp thêm nhiều tính năng bổ ích để hỗ trợ người chơi. Bên cạnh đó, hệ thống thanh toán và bảo mật cũng được trang bị nhiều công nghệ tối tân để mọi giao dịch và hoạt động được an toàn tuyệt đối. </p>
+
+            <p class="mt-3">Tính đến nay, <span class="text-gray-900 font-semibold">Hay88</span> đã có sự phát triển vượt bậc cả về quy mô lẫn chất lượng. Thị phần của nhà cái này được mở rộng sang nhiều quốc gia ở châu Á. Số lượng người truy cập website để tham gia cá cược hiện đã lên đến con số hàng triệu. Đây là một tín hiệu tích cực về sự chuyển mình của sân chơi xanh chín này. </p>
+            
+            <span class="text-2xl font-semibold text-[#1e73be] mt-5 block">Tính pháp lý của nhà cái Hay88</span>
+            <p class="mt-3"><span class="text-gray-900 font-semibold">Hay88</span> được cấp giấy phép hoạt động bởi tổ chức cờ bạc quốc tế PAGCOR, Philippines. Đây là một tổ chức có uy tín hàng đầu trong lĩnh vực cờ bạc, đảm bảo tính hợp pháp và minh bạch trong hoạt động kinh doanh của nhà cái.</p>
+            
+            <!-- images 2 -->
+            <div class="mt-5 flex flex-col justify-center items-center w-full">
+                <div onclick="url()" class="cursor-pointer">
+                    <img src="./images/photo2.jpg">
+                    <span class="italic p-2 bg-gray-100 block text-center">Giấy phép hoạt động hợp pháp</span>
+                </div>
+            </div>
+            
+            <p class="mt-3"><span class="text-gray-900 font-semibold">Hay88</span> tuân thủ các quy định của pháp luật Philippines và pháp luật quốc tế. Nhà cái này không tham gia vào các hoạt động bất hợp pháp, gây ảnh hưởng xấu đến an ninh trật tự xã hội. Trang web cũng không có hành vi gian lận, lừa đảo người chơi.</p>
+            
+            <p class="mt-3"><span class="text-gray-900 font-semibold">Hay88</span> có chính sách rõ ràng và sẵn sàng công khai tỷ lệ cược, quy tắc trò chơi và các thông tin khác liên quan đến hoạt động cá cược. Điều này giúp người chơi có thể nắm bắt rõ cách thức hoạt động và đưa ra quyết định đặt cược một cách sáng suốt.</p>
+            
+            <!-- Tìm hiểu những ưu điểm và nhược điểm của nhà cái Hay88  -->
+            <span class="text-2xl font-semibold text-[#1e73be] mt-5 block">Tìm hiểu những ưu điểm và nhược điểm của nhà cái Hay88 </span>
+            <p class="mt-3">Để vươn lên dẫn đầu trong top các nhà cái uy tín không phải là một việc dễ dàng. Tuy nhiên với tiềm năng của mình, Hay88 đã thực hiện thành công điều này. Hãy để nội dung sau bật mí những điểm mạnh và điểm yếu của địa chỉ cá cược đình đám này. </p>
+            
+            <span class="text-xl font-semibold text-[#1e73be] mt-7 block">Ưu điểm của nhà cái Hay88</span>
+            <p class="mt-3">Dưới đây là những yếu tố góp phần giúp <span class="text-gray-900 font-semibold">Hay88</span> chiếm được lòng tin của đông đảo người chơi: </p>
+
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Thiết kế trang web </span>
+            <p class="mt-3">Để đem lại cho khách hàng một không gian giải trí vượt bậc, <span class="text-gray-900 font-semibold">Hay88</span> đã rất chú trọng đầu tư vào website của mình. Giao diện nhà cái chinh phục người chơi nhờ thiết kế đơn giản và cực kỳ thân thiện. Game thủ có thể dễ dàng điều hướng giữa các trang một cách mượt mà và nhanh chóng. </p>
+            
+            <p class="mt-3">Các trò chơi được phân loại theo từng danh mục để người dùng có thể tiếp cận mà không mất nhiều thời gian. Với sự sắp xếp một cách khoa học và logic, <span class="text-gray-900 font-semibold">Hay88</span> đã giúp cho cả những người không rành về công nghệ cũng có thể thao tác mà không gặp trở ngại gì. Ngoài ra, phong cách tối giản cũng giúp game thủ không bị rối mắt mà tập trung hơn và các thông tin cần thiết </p>
+            
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Đa dạng cổng thanh toán  </span>
+            <p class="mt-3">Các cổng thanh toán của <span class="text-gray-900 font-semibold">Hay88</span> đều được tích hợp sẵn trên website và ứng dụng di động của nhà cái. Điều này giúp người chơi dễ dàng nạp tiền và rút tiền chỉ với vài thao tác đơn giản. Sự đa dạng trong các hình thức thanh toán đã giúp cho quá trình giao dịch trở nên thuận tiện hơn rất nhiều. </p>
+            
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Khuyến mãi hấp dẫn</span>
+            <p class="mt-3"><span class="text-gray-900 font-semibold">Nhà cái Hay88</span> triển khai nhiều ưu đãi hấp dẫn nhằm mang đến cho người chơi trải nghiệm cá cược tốt nhất. Các khuyến mãi này giúp khách hàng có thêm cơ hội nhận thưởng, từ đó tăng hứng thú và niềm vui khi tham gia chơi tại đây. Đây cũng là một chiến lược kinh doanh hàng đầu của nhà cái để tạo ra mối quan hệ tốt đẹp và khăng khít với các hội viên của mình.</p>
+            
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Kho game siêu chất</span>
+            <p class="mt-3">Về số lượng, kho <span class="text-gray-900 font-semibold">game Hay88</span> sở hữu hơn 1000 trò chơi thuộc nhiều thể loại khác nhau. Có thể kể đến các sản phẩm cá cược tiêu biểu như casino, game bài, đá gà, thể thao, nổ hũ,… Về chất lượng, các tựa game đều được cung cấp bởi các đơn vị uy tín trên thế giới, như: Evolution Gaming, Playtech, Pragmatic Play,…</p>
+            
+            <!-- images 3 -->
+            <div class="mt-5 flex flex-col justify-center items-center w-full">
+                <div onclick="url()" class="cursor-pointer">
+                    <img src="./images/photo3.jpg">
+                    <span class="italic p-2 bg-gray-100 block text-center">Kho game đổi thưởng hấp dẫn</span>
+                </div>
+            </div>
+
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Dịch vụ chăm sóc khách hàng </span>
+            <p class="mt-3">Khi sử dụng dịch vụ của <span class="text-gray-900 font-semibold">Hay88</span>, khách hàng hoàn toàn yên tâm về việc được hỗ trợ và giải đáp mọi thắc mắc của mình nhanh chóng và hiệu quả nhất có thể. Nhà cái cung cấp nhiều kênh liên lạc khác nhau, phục vụ 24/7 bao gồm email, số điện thoại và trò chuyện trực tiếp trên trang web. </p>
+            <p class="mt-3">Nhân viên hỗ trợ của <span class="text-gray-900 font-semibold">Hay88</span> được đào tạo chuyên nghiệp và có nhiều kinh nghiệm trong việc giải quyết các vấn đề liên quan đến dịch vụ của nhà cái. Thái độ tận tâm, nhiệt tình và chu đáo chắc chắn sẽ không làm bạn thất vọng. </p>
+            
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Hệ thống bảo mật </span>
+            <p class="mt-3"><span class="text-gray-900 font-semibold">Hay88</span> hiểu rằng bảo mật thông tin là rất quan trọng trong ngành công nghiệp cá cược trực tuyến. Vì vậy, họ đã sử dụng nhiều công nghệ tiên tiến để giữ an toàn thông tin cho khách hàng của mình, cụ thể như sau: </p>
+
+            <ul class="list-disc p-4">
+                <li>Nhà cái lưu trữ tất cả dữ liệu của người chơi trên các máy chủ an toàn, được bảo vệ bởi nhiều lớp bảo mật.</li>
+                <li class="mt-3">Trang web luôn có đội ngũ bảo mật chuyên nghiệp để giám sát hệ thống 24/7 nhằm phát hiện và ngăn chặn các mối đe dọa tiềm ẩn.</li>
+                <li class="mt-3">Công nghệ nhận dạng hành vi người chơi để phát hiện các chiêu trò gian lận như: đặt cược lớn đột ngột, sử dụng nhiều tài khoản,…</li>
+                <li class="mt-3">Mã hóa SSL (Secure Sockets Layer) để mã hóa tất cả các dữ liệu truyền tải giữa người chơi và nhà cái nhằm tránh việc đánh cắp trái phép thông tin.</li>
+            </ul>
+
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Nhược điểm của Hay88 </span>
+            <p class="mt-3">Hiện nay, một số sản phẩm của <span class="text-gray-900 font-semibold">Hay88</span> chưa được Việt hoá hoàn toàn. Trang web vẫn đang sử dụng bản tiếng anh được cung cấp trực tiếp từ các đối tác. Bất đồng về ngôn ngữ có thể khiến người chơi khó tiếp cận hơn. Đội ngũ kỹ thuật đang hoạt động hết công suất để cập nhật các phiên bản tối ưu nhất cho người chơi. </p>
+            
+            <!-- Những trò chơi nhất định phải thử tại Hay88   -->
+            <span class="text-2xl font-semibold text-[#1e73be] mt-5 block">Những trò chơi nhất định phải thử tại Hay88 </span>
+            <p class="mt-3">Danh sách dưới đây sẽ bao gồm những trò chơi nhận được nhiều sự quan tâm nhất tại nhà cái <span class="text-gray-900 font-semibold">Hay88.</span> Tất cả những ứng cử viên này đều được chọn mặt gửi vàng một cách kỹ lưỡng. Nếu thử trải nghiệm, chắc chắn bạn sẽ cảm thấy cực kỳ hài lòng. </p>
+            
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Xổ số Mega 6/45 1 phút </span>
+            <p class="mt-3">Xổ số Mega 6/45 là một loại hình xổ số do Công ty Xổ số Điện toán Việt Nam (Vietlott) tổ chức, với giải thưởng cao nhất lên đến 222 tỷ đồng. Trò này có cách chơi tương tự như xổ số Powerball của Mỹ khi người chơi có thể chọn 6 số bất kỳ trong khoảng từ 1 đến 45 để tham gia dự thưởng.</p>
+            
+            <!-- images 4 -->
+            <div class="mt-5 flex flex-col justify-center items-center w-full">
+                <div onclick="url()" class="cursor-pointer">
+                    <img src="./images/pic4.jpg">
+                    <span class="italic p-2 bg-gray-100 block text-center">Xổ số</span>
+                </div>
+            </div>
+            
+            <p class="mt-3">Kết quả của mỗi lần quay Mega 6/45 sẽ được tự động tính toán và xác định bởi máy tính mà không hề bị can thiệp bởi bên thứ 3 nào cả. Nếu người chơi trúng đủ 3, 4 hoặc 5 số sẽ nhận được giải thưởng tương ứng với số lượng số trùng khớp. </p>
+            <p class="mt-3">Còn giải độc đắc sẽ được trao cho người chơi sở hữu tất cả 6 số đều trùng khớp với kết quả. Nếu không có ai trúng giải độc đắc, giải thưởng sẽ tiếp tục tăng lên cho đến khi có người trúng giải.</p>
+            
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Tài xỉu MD5  </span>
+            <p class="mt-3">Tài xỉu MD5 có tên gọi như vậy vì trò chơi này sử dụng thuật toán mã hóa MD5 để tạo ra một mã cố định bao gồm 32 ký tự. Mã này được sử dụng để kiểm tra xem kết quả của ván chơi có chính xác hay không. MD5 là một thuật toán mã hóa một chiều, đồng nghĩa với việc nó không thể bị đảo ngược. Điều này đảm bảo rằng kết quả của ván chơi không thể bị thay đổi bởi yếu tố con người.</p>
+            
+            <p class="mt-3">Đây là một trò chơi dựa trên may mắn và người chơi phải đoán trúng kết quả của ba con xúc xắc được tung lăn trên bàn. Trò chơi này cũng được biết đến với nhiều các gọi như Sicbo, Tai Sai, Xí Ngầu, hay Chẵn Lẻ. Người chơi cần đặt một số tiền tương ứng vào các cửa cược mà mình tin là sẽ chiến thắng và chờ đợi kết quả.</p>
+            
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Xèng Hoa Quả </span>
+            <p class="mt-3">Bạn đang tìm kiếm một trò chơi đơn giản, thú vị và có cơ hội chiến thắng cao để giải trí? Hãy đến với <span class="text-gray-900 font-semibold">nhà cái Hay88</span> và trải nghiệm ngay slot game Xèng Hoa Quả đang rất được ưa chuộng hiện nay.</p>
+            
+            <p class="mt-3">Trò chơi Xèng Hoa Quả có cấu trúc gồm 5 trục quay và 9 dòng thanh toán. Khi bắt đầu, người chơi cần đặt cược trước bằng cách sử dụng các nút “+” và “-” để điều chỉnh số tiền cược mà mình mong muốn. Sau đó, game thủ sẽ tiến hành quay và chờ đợi những biểu tượng hiển thị trên các trục.</p>
+            
+            <p class="mt-3">Khi các trục quay dừng lại, nếu các biểu tượng trên các dòng thanh toán phù hợp với một trong những bảng trả thưởng có sẵn, người chơi sẽ được trả tiền với mức tương ứng. Biểu tượng hoa quả là biểu tượng hoang dã và có thể thay thế cho bất kỳ biểu tượng nào khác trên các trục để giúp bạn có cơ hội chiến thắng cao hơn.</p>
+            
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Nổ hũ Super Rich JILI </span>
+            <p class="mt-3">Nổ hũ Super Rich là một trò chơi game nổi tiếng tại <span class="text-gray-900 font-semibold">Hay88.</span> Game được phát triển bởi JILI và đã thu hút được rất nhiều người chơi. Với đồ họa đẹp mắt và âm thanh sống động, Nổ hũ Super Rich JILI đưa người chơi vào một thế giới đầy thử thách và niềm vui. </p>
+            
+            <!-- images 45-->
+            <div class="mt-5 flex flex-col justify-center items-center w-full">
+                <div onclick="url()" class="cursor-pointer">
+                    <img src="./images/pic5.jpg">
+                    <span class="italic p-2 bg-gray-100 block text-center">Game slot</span>
+                </div>
+            </div>
+            
+            <p class="mt-3">Trò chơi có nhiều cấp độ khó, dễ khác nhau và người chơi có thể tham gia vào các giải đấu để cạnh tranh với những đối thủ khác. Ngoài ra, game còn có hệ thống quà tặng và phần thưởng hấp dẫn như tiền mặt, kim cương và các vật phẩm giá trị khác, giúp người chơi tối ưu hoá lợi nhuận.  </p>
+            <p class="mt-3">Không chỉ đơn giản là một trò chơi giải trí, Nổ hũ Super Rich còn là một cách để người chơi thỏa mãn sự ham muốn chiến thắng, trau dồi kỹ năng tư duy và quản lý tài chính. Đồng thời tạo ra một môi trường giao lưu và kết nối giữa những cược thủ có cùng sở thích. </p>
+            
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Nổ hũ Apollo CQ9 </span>
+            <p class="mt-3">Apollo là một slot game trực tuyến phổ biến được phát triển bởi CQ9 Gaming. Đây luôn là lựa chọn hàng đầu của các game thủ yêu thích thử vận may tại <span class="text-gray-900 font-semibold">Hay88.</span> Trò nổ hũ đặc biệt này được thiết kế với giao diện đẹp mắt và âm thanh sống động, mang lại cho khách hàng trải nghiệm giải trí đầy thú vị và độc đáo.</p>
+            
+            <p class="mt-3">Apollo CQ9 là nơi người chơi đặt cược và quay các cuộn để đạt được các kết quả khác nhau. Người chơi có thể đặt cược với số tiền tùy ý và tùy chọn số lượng dòng cược để tăng khả năng chiến thắng. Với nhiều cấp độ và bảng thanh toán khác nhau, người chơi sẽ có nhiều cơ hội để giành được những phần thưởng hấp dẫn.</p>
+            
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Bắn Cá Lộc </span>
+            <p class="mt-3">Bắn Cá Lộc là một trò chơi giải trí đang rất được ưa chuộng tại các nhà cái trực tuyến, đặc biệt là tại <span class="text-gray-900 font-semibold">Hay88.</span> Với nhiều tính năng hấp dẫn và đồ họa tuyệt đẹp, trò chơi này đang được nhiều người yêu thích và truy cập hàng ngày.</p>
+            
+            <!-- imagesic6-->
+            <div class="mt-5 flex flex-col justify-center items-center w-full">
+                <div onclick="url()" class="cursor-pointer">
+                    <img src="./images/pic6.jpg">
+                    <span class="italic p-2 bg-gray-100 block text-center">Bắn cá</span>
+                </div>
+            </div>
+            
+            <p class="mt-3">Trong Bắn Cá Lộc, người chơi sẽ hóa thân thành một ngư dân, để bắt các loài cá khác nhau và kiếm tiền, thông qua việc sử dụng các loại vũ khí như súng, bom, lưới,… Mỗi loài cá sẽ có giá trị khác nhau nên người chơi cần phải chọn cách bắn phù hợp để có thể thu lợi nhuận cao nhất.</p>
+            
+            <p class="mt-3">Ngoài việc kiếm tiền, người chơi còn có thể tích lũy điểm số và thăng cấp. Mỗi cấp độ sẽ mở ra nhiều tính năng mới, giúp trò chơi trở nên thú vị hơn và cơ hội nhận thưởng cũng cao hơn.</p>
+            
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Baccarat </span>
+            <p class="mt-3">Baccarat tại <span class="text-gray-900 font-semibold">Hay88 Casino</span> là game sòng bạc được chơi với bộ bài tiêu chuẩn gồm 52 lá bài. Mục tiêu của trò chơi là đặt cược vào tay của người chơi hoặc người chia bài để tìm ra ai có tổng điểm gần với 9 nhất. Điểm số của mỗi lá bài được tính bằng giá trị của nó, với bài 2 đến 9 tính theo giá trị của chúng. Trong khi đó bài 10 và lá bài hình ảnh (J, Q, K) tính là 0 điểm và lá bài Át tính là 1 điểm.</p>
+            
+            <p class="mt-3">Game thủ có thể đặt cược vào kết quả tay người chơi, tay người chia bài hoặc cửa hòa. Khi bắt đầu trò chơi, mỗi người sẽ nhận được hai lá bài và điểm số của họ sẽ được tính dựa trên giá trị của các lá bài đó.</p>
+            
+            <p class="mt-3">Nếu tổng điểm của người chơi hoặc người chia bài là 8 hoặc 9, đó được gọi là “tự nhiên” và trò chơi sẽ kết thúc ngay lập tức. Nếu tổng điểm của họ dưới 8, họ có thể nhận thêm lá bài để tăng tổng điểm của mình. Nếu tổng điểm của họ là 6 hoặc 7, họ sẽ giữ lại lá bài của mình và không nhận thêm lá bài nào khác.</p>
+            
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Bài Tá Lả </span>
+            <p class="mt-3">Nếu bạn muốn tìm kiếm một trò chơi bài trí tuệ và cân não thì Tá Lả là sự lựa chọn hoàn hảo. </p>
+
+            <!-- imagesic7-->
+            <div class="mt-5 flex flex-col justify-center items-center w-full">
+                <div onclick="url()" class="cursor-pointer">
+                    <img src="./images/pic7.jpg">
+                    <span class="italic p-2 bg-gray-100 block text-center">Game bài</span>
+                </div>
+            </div>
+
+            <p class="mt-3">Mục tiêu của Tá Lả là bạn sẽ cố gắng ăn bài của người chơi khác hoặc bốc bài ở nọc để tạo ra các phỏm. Người đầu tiên hạ hết bài trên tay sẽ là người thắng cuộc. Tại <span class="text-gray-900 font-semibold">Hay88,</span> mỗi ván sẽ bắt đầu với việc chia bài cho các người chơi. Mỗi người chơi sẽ được chia 9 lá bài, riêng người cầm chương sẽ được chia 10 lá bài.</p>
+
+            <p class="mt-3">Người chơi cầm chương sẽ đi đầu tiên, sau đó các người chơi khác sẽ lần lượt đánh bài theo chiều kim đồng hồ. Khi có người chơi đánh 1 lá bài, các người chơi khác có thể ăn bài đó nếu nó có thể ghép thành phỏm với bài trên tay. Nếu không thể ăn bài, người chơi đó có thể bốc bài ở nọc để tiếp tục. </p>
+            
+            <p class="inline-block mt-4 border-l-2 border-gray-600 px-5 py-1 text-lg italic">Xem thêm <p onclick="url()" class="text-orange-400 inline-block hover:text-gray-900 duration-300 cursor-pointer">Khuyến Mãi Hay88 - Hòa Mình Trong Biển Ưu Đãi</p> </p>
+            
+            <!-- Hướng dẫn chi tiết từ A đến Z cách đăng ký Hay88 cho tân thủ    -->
+            <span class="text-2xl font-semibold text-[#1e73be] mt-5 block">Hướng dẫn chi tiết từ A đến Z cách đăng ký Hay88 cho tân thủ </span>
+            
+            <p class="mt-3">Nếu bạn là một tân thủ và muốn tham gia trang web cá cược trực tuyến tại <span class="text-gray-900 font-semibold">Hay88,</span> đăng ký tài khoản là điều đầu tiên cần làm. Bài viết sau sẽ cung cấp cho bạn các bước chi tiết để có thể hoàn thành việc này một cách dễ dàng.</p>
+            
+            <!-- imagesic8-->
+            <div class="mt-5 flex flex-col justify-center items-center w-full">
+                <div onclick="url()" class="cursor-pointer">
+                    <img src="./images/pic8.jpg">
+                    <span class="italic p-2 bg-gray-100 block text-center">Hướng dẫn đăng ký</span>
+                </div>
+            </div>
+
+            <ul class="list-disc p-4">
+                <li>Bước 1: Truy cập website chính thức của nhà cái. Bạn có thể tìm kiếm thông qua việc gõ từ khóa <span class="text-gray-900 font-semibold">“Hay88”</span> vào các trình duyệt hoặc truy cập trực tiếp vào đường dẫn của trang web: <p onclick="url()" class="inline-block text-orange-400 font-semibold">https://hay88net.com/</p></li>
+                <li class="mt-3">Bước 2: Khi bạn đã vào thành công trang chủ, hãy tìm kiếm nút “Đăng ký” hoặc “Đăng ký ngay” để nhấp vào.</li>
+                <li class="mt-3">Bước 3: Điền thông tin của bạn vào biểu mẫu đăng ký theo các yêu cầu sau:</li>
+            </ul>
+
+            <p class="mt-3">Tên đăng nhập của bạn phải có từ 6 đến 16 ký tự và không được chứa bất kỳ khoảng trắng nào.</p>
+            <p class="mt-3">Mật khẩu của bạn phải có từ 6 đến 20 ký tự và bao gồm ít nhất một chữ hoa, một chữ thường và một số.</p>
+            <p class="mt-3">Nhập lại mật khẩu một lần nữa để xác nhận rằng 2 lần trùng khớp với nhau.</p>
+            <p class="mt-3">Nhập họ và tên của bạn (như được in trên giấy chứng minh nhân dân của bạn).</p>
+            <p class="mt-3">Nhập số điện thoại của bạn với mục đích sử dụng là xác nhận tài khoản chính chủ.</p>
+            <p class="mt-3">Nếu bạn có mã giới thiệu, hãy nhập nó vào ô tương ứng để hưởng ưu đãi sau này. </p>
+            <ul class="list-disc p-4">
+                <li class="mt-3">Bước 4: Sau khi điền đầy đủ thông tin của bạn vào biểu mẫu đăng ký, hãy nhấp vào nút “Đăng ký” để hoàn thành quá trình.</li>
+            </ul>
+            
+            <p class="inline-block mt-4 border-l-2 border-gray-600 px-5 py-1 text-lg italic">Xem thêm <p class="inline-block text-orange-400 hover:text-gray-900 duration-300">Đăng Ký Hay88 – Khám Phá Lựa Chọn Cá Cược Tốt Nhất</p> </p>
+            
+            <!-- Hướng dẫn chi tiết từ A đến Z cách đăng ký Hay88 cho tân thủ    -->
+            <span class="text-2xl font-semibold text-[#1e73be] mt-5 block">Cách tải app Hay88 siêu tốc về điện thoại Android</span>
+            
+            <p class="mt-3">Nếu muốn thưởng thức các siêu phẩm cá cược của <span class="text-gray-900 font-semibold">Hay88</span> trên điện thoại Android, bạn cần phải tải xuống và cài đặt ứng dụng của nhà cái. Để giúp bạn thực hiện điều này một cách dễ dàng và nhanh chóng, chúng tôi đã tạo ra hướng dẫn chi tiết dưới đây: </p>
+
+            <!-- imagesic9-->
+            <div class="mt-5 flex flex-col justify-center items-center w-full">
+                <div onclick="url()" class="cursor-pointer">
+                    <img src="./images/pic9.jpg">
+                    <span class="italic p-2 bg-gray-100 block text-center">Hướng dẫn tải app</span>
+                </div>
+            </div>
+
+            <ul class="list-disc p-4">
+                <li class="mt-3">Bước 1: Sử dụng trình duyệt trên điện thoại để truy cập <span class="text-gray-900 font-semibold">trang chủ Hay88.</span> </li>
+                <li class="mt-3">Bước 2: Chọn mục “Tải về” để tìm kiếm tệp tin APK của ứng dụng <span class="text-gray-900 font-semibold">Hay88.</span></li>
+                <li class="mt-3">Bước 3: Bạn hãy nhấn ngay vào nút “Tải về” và chờ đợi quá trình tải xuống hoàn tất.</li>
+                <li class="mt-3">Bước 4: Sau khi tải xuống thành công, hãy nhấn vào thông báo hiển thị trên thanh công cụ để mở thư mục tải xuống trên điện thoại và tìm tệp tin APK của ứng dụng <span class="text-gray-900 font-semibold">Hay88.</span></li>
+                <li class="mt-3">Bước 5: Nếu được yêu cầu, hãy bật tính năng “Cho phép cài đặt ứng dụng không rõ nguồn gốc” và tiến hành cài đặt theo hướng dẫn trên màn hình.</li>
+            </ul>
+
+            <!-- Cách tải app Hay88 cho hệ điều hành iOS    -->
+            <span class="text-2xl font-semibold text-[#1e73be] mt-5 block">Cách tải app Hay88 cho hệ điều hành iOS</span>
+
+            <p class="mt-3">Việc tải ứng dụng từ các nguồn bên ngoài App Store là một lựa chọn để bạn có thể trải nghiệm các ứng dụng chưa được phát hành hoặc không có sẵn trên App Store. Nội dung sau sẽ hướng dẫn bạn cách tải app <span class="text-gray-900 font-semibold">nhà cái Hay88</span> cho hệ điều hành iOS. </p>
+
+            <ul class="list-disc p-4">
+                <li class="mt-3">Bước 1: Vào trang chủ của <span class="text-gray-900 font-semibold">Hay88</span> và bấm vào mục “Tải app” để tìm mã QR cho phiên bản iOS của nhà cái. </li>
+                <li class="mt-3">Bước 2: Mở điện thoại và quét mã được cung cấp trên mình hình để quá trình tải xuống được tự động thực hiện.</li>
+                <li class="mt-3">Bước 3: Sau khi ứng dụng được tải xuống, hãy chạm vào nút “Mở” để mở ứng dụng <span class="text-gray-900 font-semibold">Hay88.</span> </li>
+                <li class="mt-3">Bước 4: Uỷ quyền “Tin cậy” cho app rồi làm theo hướng dẫn trên màn hình để cài đặt <span class="text-gray-900 font-semibold">Hay88</span> thành công. </li>
+            </ul>
+
+            <!-- Cách tải app Hay88 cho hệ điều hành iOS    -->
+            <span class="text-2xl font-semibold text-[#1e73be] mt-5 block">Hướng dẫn nạp tiền Hay88 nhanh gọn và chính xác</span>
+
+            <p class="mt-3">Nạp tiền vào tài khoản nhà cái <span class="text-gray-900 font-semibold">Hay88</span> là bước không thể thiếu để có thể tham gia các trò chơi cá cược với giải thưởng hấp dẫn. <span class="text-gray-900 font-semibold">Hay88</span> cung cấp đa dạng các phương thức nạp tiền cho khách hàng, để thuận tiện cho việc chọn lựa và sử dụng.</p>
+
+            <!-- imagesic10-->
+            <div class="mt-5 flex flex-col justify-center items-center w-full">
+                <div onclick="url()" class="cursor-pointer">
+                    <img src="./images/pic10.jpg">
+                    <span class="italic p-2 bg-gray-100 block text-center">Hướng dẫn nạp tiền</span>
+                </div>
+            </div>
+
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Nạp tiền Hay88 qua thẻ ngân hàng  </span>
+            <p class="mt-3">Bạn có thể sử dụng thẻ ngân hàng để <span class="text-gray-900 font-semibold">nạp tiền Hay88</span> theo các bước sau:</p>
+
+            <ul class="list-disc p-4">
+                <li class="mt-3">Bước 1: Bạn hãy <span class="text-gray-900 font-semibold">đăng nhập Hay88</span> theo thông tin đã tạo lúc đăng ký.</li>
+                <li class="mt-3">Bước 2: Tiếp theo, bạn cần bấm vào tab “Nạp tiền” ở trên cùng của trang chủ và lựa chọn “Chuyển khoản qua thẻ ngân hàng” để tiếp tục quá trình. </li>
+                <li class="mt-3">Bước 3: Chọn 1 trong các cổng nạp sau: Vietcombank, Ngân hàng trực tuyến CSJ, Nạp tiền banking CL, Ngân hàng trực tuyến KG, Mã quét UnionPay, Nạp tiền Banking YH1. </li>
+                <li class="mt-3">Bước 4: Đọc lời nhắc thanh toán rồi nhập số tiền và bấm “Nạp ngay” để tạo lệnh. </li>
+                <li class="mt-3">Bước 5: Ấn “Gửi” để xác nhận chuyển qua trang thanh toán. </li>
+                <li class="mt-3">Bước 6: Tiến hành chuyển khoản theo nội dung được cung cấp bằng cách ra ATM, vào quầy giao dịch hoặc sử dụng Internet Banking. </li>
+            </ul>
+
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Nạp tiền Hay88 qua quét mã QR</span>
+            <p class="mt-3">Hình thức này sẽ cung cấp các cổng thanh toán của 3 ví điện tử, bao gồm Momo, Zalo Pay và Viettel Pay. Dưới đây là các bước bạn có thể làm theo để giao dịch được thành công:</p>
+
+            <ul class="list-disc p-4">
+                <li class="mt-3">Bước 1: Người chơi cần đăng nhập tài khoản <span class="text-gray-900 font-semibold">game Hay88</span> của mình.</li>
+                <li class="mt-3">Bước 2: Lựa chọn “Nạp tiền qua quét mã QR” trong danh mục “Nạp tiền” để bắt đầu giao dịch. </li>
+                <li class="mt-3">Bước 3: Bạn cần chọn cổng thanh toán và nhập số tiền muốn nạp trong hạn mức được nhắc nhở. </li>
+                <li class="mt-3">Bước 4: Xác nhận tạo phiếu giao dịch với hệ thống. </li>
+                <li class="mt-3">Bước 5: Nhà cái đưa bạn đến trang chứa thông tin để bạn mở ứng dụng ví điện tử trên điện thoại và thanh toán. </li>
+            </ul>
+
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Nạp tiền Hay88 qua thẻ điện thoại</span>
+            <p class="mt-3">Hướng dẫn sử dụng thẻ điện thoại để <span class="text-gray-900 font-semibold">nạp tiền Hay88</span> bao gồm các bước sau:</p>
+
+            <ul class="list-disc p-4">
+                <li class="mt-3">Bước 1: Người chơi cần điền ID và mật khẩu để đăng nhập vào tài khoản <span class="text-gray-900 font-semibold">Hay88.</span></li>
+                <li class="mt-3">Bước 2: Tiếp theo, bạn hãy chọn thẻ điện thoại làm hình thức <span class="text-gray-900 font-semibold">nạp tiền Hay88.</span></li>
+                <li class="mt-3">Bước 3: Bạn hãy điền số tiền cần nạp và ấn “Gửi” để xác nhận lệnh giao dịch. </li>
+                <li class="mt-3">Bước 4: Sau khi được chuyển hướng đến hệ thống nạp thẻ cào của nhà cái, hãy nhập đúng 3 tiêu chí sau để giao dịch được thuận lợi: số thẻ, mã seri và nhà mạng.</li>
+            </ul>
+
+            <!-- Tổng hợp các ưu đãi hấp dẫn đến từ nhà cái Hay88 -->
+            <span class="text-2xl font-semibold text-[#1e73be] mt-5 block">Tổng hợp các ưu đãi hấp dẫn đến từ nhà cái Hay88</span>
+            <p class="mt-3">Dưới đây là hàng loạt các <span class="text-gray-900 font-semibold">khuyến mãi Hay88</span> cực khủng mà nhà cái ưu ái dành cho người chơi. Hãy theo dõi và đừng bỏ lỡ bất kỳ cơ hội tối ưu hoá chi phí nào!</p>
+
+            <!-- imagesic11-->
+            <div class="mt-5 flex flex-col justify-center items-center w-full">
+                <div onclick="url()" class="cursor-pointer">
+                    <img src="./images/pic11.jpg">
+                    <span class="italic p-2 bg-gray-100 block text-center">Khuyến mãi hấp dẫn</span>
+                </div>
+            </div>
+
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Mời bạn bè, nhận quà khủng</span>
+            <p class="mt-3">Hãy alo ngay cho bạn bè của mình cùng tham gia <span class="text-gray-900 font-semibold">Hay88</span> để không còn phải chơi game một mình. Có người đồng hành thì hành trình nào cũng bớt gian nan hơn. Với mỗi lượt giới thiệu hợp lệ, bạn sẽ nhận được ngay 300k và không giới hạn số lượng. </p>
+
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Chia sẻ website Hay88 </span>
+            <p class="mt-3">Tất cả các thành viên chỉ cần chia sẻ hay viết bài quảng cáo cho <span class="text-gray-900 font-semibold">Hay88</span> trên các trang mạng xã hội kèm hashtag <span class="text-gray-900 font-semibold">#Hay88</span> ở chế độ công khai tối thiểu 24h là sẽ được nhận thưởng. Sau khi hoàn thành nhiệm vụ, hãy liên hệ ngay với nhân viên hỗ trợ tại Telegram để nhận được phần thưởng hấp dẫn lên đến 1288k. </p>
+
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Tiền trợ cấp thua hàng tháng </span>
+            <p class="mt-3">Các thành viên nào có lỗ ròng từ 500k trở lên đều có thể tham gia nhận thưởng tại nhà cái này. Số tiền nhận được có thể lên đến 388888k để bạn tha hồ cá cược. </p>
+            
+            <p class="inline-block mt-4 border-l-2 border-gray-600 px-5 py-1 text-lg italic">Xem thêm <p class="inline-block cursor-pointer text-orange-400 hover:text-gray-900 duration-300">Nạp Tiền Hay88 - Bước Đầu Chinh Phục Cơ Hội Thắng Lớn</p> </p>
+            
+            <!-- FAQ – Lý giải những thắc mắc phổ biến tại nhà cái Hay88 -->
+            <span class="text-2xl font-semibold text-[#1e73be] mt-5 block">FAQ – Lý giải những thắc mắc phổ biến tại nhà cái Hay88 </span>
+            <p class="mt-3">Nội dung sau sẽ tổng hợp những câu hỏi thường gặp tại <span class="text-gray-900 font-semibold">nhà cái Hay88</span> và giải đáp chúng một cách chi tiết nhất có thể.</p>
+
+            <!-- imagesic12-->
+            <div class="mt-5 flex flex-col justify-center items-center w-full">
+                <div onclick="url()" class="cursor-pointer">
+                    <img src="./images/pic12.jpg">
+                    <span class="italic p-2 bg-gray-100 block text-center">FAQ – Những câu hỏi thường gặp</span>
+                </div>
+            </div>
+
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Tìm hiểu về việc nhà cái Hay88 lừa đảo </span>
+            <p class="mt-3">Tin đồn <span class="text-gray-900 font-semibold">Hay88 lừa đảo</span> đã lan truyền rộng rãi và gây ra nhiều phiền toái cho nhà cái. Tuy nhiên, những tin đồn này hoàn toàn không có bất kỳ cơ sở thực tế nào. Nguyên nhân đã được xác định là do các đối thủ cạnh tranh muốn hạ bệ uy tín của nhà cái. </p>
+            
+            <p class="mt-3">Ngay từ những ngày đầu tiên xuất hiện các nội dung sai lệch này, <span class="text-gray-900 font-semibold">Hay88</span>đã nhanh chóng và tích cực lên tiếng để giải thích. Nhà cái sẵn sàng cung cấp thông tin chính xác về tình hình hiện tại của mình. Ví dụ như giấy phép kinh doanh, chính sách trả thưởng, tiềm lực tài chính,…</p>
+            
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Tại sao không truy cập được vào Hay88?</span>
+            <p class="mt-3">Một số nguyên nhân phổ biến có thể bao gồm lỗi kết nối internet hoặc sự cố kỹ thuật trên trang web của <span class="text-gray-900 font-semibold">Hay88.</span> Ngoài ra, website <span class="text-gray-900 font-semibold">Hay88</span> có thể bị chặn ở một số quốc gia hoặc khu vực. Trong trường hợp này, bạn có thể sử dụng các công cụ như VPN để ẩn IP và tiếp tục truy cập. </p>
+            
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Quên mật khẩu Hay88 phải làm sao?</span>
+            <p class="mt-3">Trên trang đăng nhập của <span class="text-gray-900 font-semibold">Hay88,</span> bạn sẽ thấy liên kết “Quên mật khẩu”. Nhấp vào đó và nhập địa chỉ email hoặc số điện thoại đã đăng ký với tài khoản của bạn. Sau đó, bạn sẽ nhận được một liên kết hoặc mã xác nhận để lấy lại mật khẩu của mình.</p>
+            
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Nạp tiền Hay88 có mất phí không?</span>
+            <p class="mt-3">Việc nạp tiền vào tài khoản <span class="text-gray-900 font-semibold">Hay88</span> có thể mất phí tùy thuộc vào phương thức thanh toán bạn sử dụng. Ví dụ như đối với nạp tiền bằng thẻ cào, nhà cái sẽ thu 15% phí chiết khấu. </p>
+            
+            <span class="text-lg font-semibold text-[#1e73be] mt-7 block">Làm thế nào để rút tiền Hay88 nhanh chóng?</span>
+            <p class="mt-3"><span class="text-gray-900 font-semibold">Hay88</span> hiểu rằng việc rút tiền là một nhu cầu quan trọng và cần được thực hiện nhanh chóng và dễ dàng. Vì vậy, nhà cái đã cung cấp cho bạn một quy trình rút tiền đơn giản và thuận tiện với các bước sau: </p>
+
+            <ul class="list-disc p-4">
+                <li class="mt-3">Bước 1: Bạn cần đăng nhập vào tài khoản của mình trên trang web <span class="text-gray-900 font-semibold">Hay88.</span></li>
+                <li class="mt-3">Bước 2: Lựa chọn tính năng “Rút tiền” từ thanh tiện ích.</li>
+                <li class="mt-3">Bước 3: Thiết lập mật khẩu rút tiền và thêm thông tin tài khoản ngân hàng muốn rút về. </li>
+                <li class="mt-3">Bước 4: Bạn hãy nhập chính xác số tiền muốn rút sao cho nó đáp ứng được các tiêu chí mà nhà cái đề ra. </li>
+                <li class="mt-3">Bước 5: Cuối cùng là bấm “Rút tiền” để tạo lệnh và chờ hệ thống Hay88 xử lý. </li>
+            </ul>
+
+            <!-- Kết luận -->
+            <span class="text-2xl font-semibold text-[#1e73be] mt-5 block">Kết luận</span>
+            <p class="inline-block mt-3 px-1">Tóm lại, <p onclick="url()" class="inline-block text-orange-400 font-semibold"> Hay88</p> là một sân chơi xanh chín mà các cược thủ không nên bỏ qua. Vừa được giải trí vừa kiếm được tiền mang về thì còn gì tuyệt vời bằng. Đăng ký ngay hôm nay để sở hữu một tài khoản game tại nhà cái có 102 này. Chúc tất cả các game thủ đều gặt hái được nhiều thành công rực rỡ!</p>
+
+
+            <!-- about -->
+            <div class="mt-20">
+                <div class="border-b py-0.5 text-[13px]">
+                    <button onclick="url()" class="bg-gray-200 px-2 py-1.5">About</button>
+                    <button onclick="url()" class="hover:bg-gray-200 duration-500 px-2 py-1.5">Latest Posts</button>
+                </div>
+            </div>
+
+            <!-- Hồng Đức -->
+            <div class="py-10 border-b flex flex-col md:flex-row gap-3">
+                <div onclick="url()" class="w-20 md:w-32 rounded-full cursor-pointer">
+                    <img src="./images/avatar.jpg" class="rounded-full">
+                </div>
+                <div class="text-[14px]">
+                    <span onclick="url()" class="text-orange-400 text-lg font-semibold cursor-pointer">Hồng Đức</span>
+                    <p class="text-[13px] inline-block px-1">Hồng Đức - CEO Nhà Cái Hay88 Đẳng Cấp Nhất Thị Trường at <p onclick="url()" class="inline-block text-orange-400 cursor-pointer">Hay88</a></p>
+                    <p>Hồng Đức là một trong những CEO hàng đầu và được tôn vinh trong lĩnh vực cá cược trực tuyến. Với sự am hiểu sâu sắc và lịch sử kinh nghiệm đáng kể, anh đã đưa nhà cái Hay88 đạt được thành công vượt bậc trong ngành này. </p>
+                    <p>Họ và tên: Đoàn Hồng Đức</p>
+                    <p>Ngày sinh: 11/07/1997</p>
+                    <p>Giới tính: Nam</p>
+                    <p>Quê quán: Thành phố Hồ Chí Minh, Việt Nam</p>
+                    <p>Trình độ học vấn: Tôi đã tốt nghiệp Đại Học UEF Tp.HCM</p>
+                    <p>Địa chỉ liên hệ: Nguyễn Chí Thanh, phường 9, quận 5, Tp.HCM</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="mt-10 bg-[#3e87c7] py-10 p-4">
+            <div class="max-w-[1080px] m-auto grid md:grid-cols-3 gap-5 text-gray-200">
+                <div class="flex flex-col">
+                    <span class="font-semibold block">NHÀ CÁI HAY88</span>
+                    <span class="w-8 h-1 bg-gray-400 block mt-2"></span>
+                    <div onclick="url()" class="mt-5 cursor-pointer">
+                        <img src="./images/logo2.png" class="w-3/6">
+                    </div>
+                    <p class="mt-5"><span class="font-semibold">Hay88</span> là nhà cái về cá cược online đẳng cấp nhất hiện nay. Với các tựa game đa dạng, hấp dẫn. Tham gia trải nghiệm ngay để nhận nhiều ưu đãi cực lớn.</p>
+                </div>
+    
+                <div class="">
+                    <span class="font-semibold block">VỀ CHÚNG TÔI</span>
+                    <span class="w-8 h-1 bg-gray-400 block mt-2"></span>
+                    <div class="flex flex-col gap-3 mt-5 *:text-start">
+                        <button onclick="url()" class="hover:text-white duration-500">GIỚI THIỆU</button>
+                        <button onclick="url()" class="hover:text-white duration-500">CHÍNH SÁCH BẢO MẬT</button>
+                        <button onclick="url()" class="hover:text-white duration-500">ĐIỀU KHOẢN DỊCH VỤ</button>
+                        <button onclick="url()" class="hover:text-white duration-500">LIÊN HỆ</button>
+                        <button onclick="url()" class="hover:text-white duration-500">SITEMAP</button>
+                    </div>
+                
+                </div>
+    
+                <div class="">
+                    <span class="font-semibold block">LIÊN HỆ NHÀ CÁI</span>
+                    <span class="w-8 h-1 bg-gray-400 block mt-2"></span>
+                    <div class="flex flex-col gap-3 mt-5">
+                        <span>Website: <button onclick="url()" class="font-semibold hover:text-white duration-300"> https://hay88net.com/</button></span>
+                        
+                        <span onclick="url()" class="hover:text-white duration-300 cursor-pointer">Email: hay88net.com@gmail.com</span>
+                        <span>Điện Thoại: (+63) 949 870 7015</span>
+                        <span>Địa Chỉ: 30 Nguyễn Trọng Tuyển, Phường 15,</span>
+                        <span>Phú Nhuận, Thành phố Hồ Chí Minh, Việt Nam</span>
+                        <span>Mã Bưu Điện: 72209</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-3 bg-[#dd9933] text-gray-300">
+            <span class="block text-center font-semibold"> <span class="font-normal">Copyright 2024 ©</span> Bản quyền HAY88NET.COM</span>
+        </div>
+    </div>
+
+    <button onclick="topScroll()" title="Go to top"><ion-icon name="chevron-up-circle-outline" class="fixed bottom-5 right-5 z-50 text-5xl text-yellow-500"></ion-icon></button>
+
+    <!-- splide -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide', {
+                perPage: 1,
+                gap: '20px',
+                type: 'loop',
+                autoplay: true,
+                interval: 2000,
+                snap: true,
+                // breakpoints: {
+                //     768: {
+                //         perPage: 2
+                //     },
+                //     448: {
+                //         perPage: 1
+                //     }
+                // }
+                // start: 2,
+                // pagination: false,
+            });
+            splide.mount();
+        });
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
