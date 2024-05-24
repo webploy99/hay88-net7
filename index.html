@@ -14,127 +14,130 @@
 
 </head>
 <body>
-    <!-- header dropdown when scroll -->
-    <header id="navbar" class="header w-full fixed top-0 left-0 z-50 duration-500">
-        <div class="bg-[#292e3b] tracking-wide p-3.5 z-40 opacity-90">
-            <div class="max-w-[1080px] m-auto flex  justify-center md:justify-between items-center text-white font-semibold relative">
-                <div class="menu-icon absolute left-0 md:hidden text-2xl" onclick="OpenNav()">
-                    <ion-icon name="menu-outline" class="border p-1 rounded-md"></ion-icon>
-                </div>
-    
-                <div class="logo max-w-[200px] cursor-pointer">
-                    <img src="./images/logo.png">
-                </div>
-
-                <nav id="Nav">
-                    <div class="md:hidden flex justify-end text-3xl p-2 font-bold w-full h-full bg-gray-600 opacity-80" onclick="CloseNav()">
-                        <ion-icon name="close"></ion-icon>
+    <!--======== header ========-->
+    <section>
+        <!-- header dropdown when scroll -->
+        <header id="navbar" class="header w-full fixed top-0 left-0 z-50 duration-500">
+            <div class="bg-[#292e3b] tracking-wide p-3.5 z-40">
+                <div class="max-w-[1080px] m-auto flex justify-center md:justify-between items-center text-white font-semibold relative">
+                    <div class="menu-icon absolute left-0 md:hidden text-2xl mt-1" onclick="OpenNav()">
+                        <ion-icon name="menu-outline" class="border p-0.5 rounded-md"></ion-icon>
                     </div>
-                    <ul class="h-full opacity-100 md:relative absolute top-0 z-50 flex flex-col gap-0 md:gap-5 md:flex-row md:p-5 text-[14.5px] bg-gray-50 text-gray-700 md:text-white md:bg-transparent divide-y divide-slate-200 *:py-4 *:md:py-0 *:md:border-none">
-                        <!-- search -->
-                        <div class="mt-10 md:hidden p-4 border-b">
-                            <div class="border flex justify-center items-center">
-                                <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner" placeholder="Tiềm Kiếm ..." required />
-                                <button class="bg-orange-500 text-white p-2">
-                                    <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- menu -->
-                        <li><a href="#" class="p-5 md:p-0 mt-20 md:mt-0 hover:text-yellow-300 duration-300">TRANG CHỦ</a></li>
-                        <li><a href="#" class="p-5 md:p-0 hover:text-yellow-300 duration-300">KHUYẾN MÃI</a></li>
-                        <li><a href="#" class="p-5 md:p-0 hover:text-yellow-300 duration-300">ĐĂNG KÝ</a></li>
-                        <li><a href="#" class="p-5 md:p-0 hover:text-yellow-300 duration-300">HƯỚNG DẪN</a></li>
-                        <li><a href="#" class="p-5 md:p-0 hover:text-yellow-300 duration-300">LIÊN HỆ</a></li>
-
-                        <!-- icon -->
-                        <div class="md:hidden mt-1">
-                            <div class="p-4">
-                                <button>  <ion-icon name="logo-facebook" class="text-4xl text-blue-800"></ion-icon> </button>
-                                <button>  <ion-icon name="logo-twitter" class="text-2xl p-1 text-white bg-indigo-800 border rounded-full"></ion-icon> </button>
-                                <button>  <ion-icon name="mail-outline" class="text-2xl p-1 text-white bg-gray-900 border rounded-full"></ion-icon> </button>
-                                <button>  <ion-icon name="call-outline" class="text-2xl p-1 text-white bg-green-500 border rounded-full"></ion-icon> </button>
-                                <button>  <ion-icon name="logo-pinterest" class="text-4xl text-red-500"></ion-icon> </button>
-                                <button>  <ion-icon name="logo-youtube" class="text-2xl p-1 text-white bg-red-500 border rounded-full"></ion-icon> </button>
-                                <button>  <ion-icon name="navigate" class="text-2xl p-1 text-white bg-blue-500 border rounded-full"></ion-icon> </button>
-                            </div>
-                        </div>
-                    </ul>
-                </nav>
+        
+                    <div onclick="url()" class="logo max-w-[200px] cursor-pointer">
+                        <img src="./images/logo.png">
+                    </div>
     
-                <div class="text-white hidden md:block text-[13.5px]">
-                    <button class="bg-red-600 px-4 py-1.5 rounded-full hover:bg-red-800 duration-300">ĐĂNG KÝ</button>
-                    <button class="bg-cyan-800 px-4 py-1.5 ml-2 rounded-full hover:bg-cyan-950 duration-300">ĐĂNG NHẬP</button>
+                    <nav id="Nav">
+                        <div class="md:hidden flex justify-end text-3xl p-2 font-bold w-full h-full bg-gray-600 opacity-80" onclick="CloseNav()">
+                            <ion-icon name="close"></ion-icon>
+                        </div>
+                        <ul class="h-full opacity-100 md:relative absolute top-0 z-50 flex flex-col gap-0 md:gap-5 md:flex-row md:p-5 text-[13px] lg:text-[14.5px] bg-gray-50 text-gray-700 md:text-white md:bg-transparent divide-y divide-slate-200 *:py-4 *:md:py-0 *:md:border-none *:cursor-pointer">
+                            <!-- search -->
+                            <div class="mt-10 md:hidden p-4 border-b">
+                                <div class="flex justify-center items-center">
+                                    <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner" placeholder="Tiềm Kiếm ..." required />
+                                    <button class="bg-orange-500 text-white py-2 px-3 rounded">
+                                        <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- menu -->
+                            <li onclick="url()" class="p-5 md:p-0 md:mt-0 hover:text-yellow-200 duration-300">TRANG CHỦ</a></li>
+                            <li onclick="url()" class="p-5 md:p-0 hover:text-yellow-200 duration-300">KHUYẾN MÃI</a></li>
+                            <li onclick="url()" class="p-5 md:p-0 hover:text-yellow-200 duration-300">ĐĂNG KÝ</a></li>
+                            <li onclick="url()" class="p-5 md:p-0 hover:text-yellow-200 duration-300">HƯỚNG DẪN</a></li>
+                            <li onclick="url()" class="p-5 md:p-0 hover:text-yellow-200 duration-300">LIÊN HỆ</a></li>
+    
+                            <!-- icon -->
+                            <div class="md:hidden mt-1">
+                                <div class="p-4">
+                                    <button onclick="url()"> <ion-icon name="logo-facebook" class="text-4xl text-blue-800"></ion-icon> </button>
+                                    <button onclick="url()"> <ion-icon name="logo-twitter" class="text-2xl p-1 text-white bg-indigo-800 border rounded-full"></ion-icon> </button>
+                                    <button onclick="url()"> <ion-icon name="mail-outline" class="text-2xl p-1 text-white bg-gray-900 border rounded-full"></ion-icon> </button>
+                                    <button onclick="url()"> <ion-icon name="call-outline" class="text-2xl p-1 text-white bg-green-500 border rounded-full"></ion-icon> </button>
+                                    <button onclick="url()"> <ion-icon name="logo-pinterest" class="text-4xl text-red-500"></ion-icon> </button>
+                                    <button onclick="url()"> <ion-icon name="logo-youtube" class="text-2xl p-1 text-white bg-red-500 border rounded-full"></ion-icon> </button>
+                                    <button onclick="url()"> <ion-icon name="navigate" class="text-2xl p-1 text-white bg-blue-500 border rounded-full"></ion-icon> </button>
+                                </div>
+                            </div>
+                        </ul>
+                    </nav>
+        
+                    <div class="text-white hidden md:block text-[13px]">
+                        <button onclick="url()" onclick="url()" class="bg-red-600 w-24 py-1.5 rounded-full hover:bg-red-800 duration-300">ĐĂNG KÝ</button>
+                        <button onclick="url()" onclick="url()" class="bg-cyan-800 w-24 py-1.5 ml-2 rounded-full hover:bg-cyan-950 duration-300">ĐĂNG NHẬP</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="text-white flex gap-3 justify-center font-semibold items-center md:hidden bg-gray-300 text-[13.5px]">
-            <button class="bg-[#b20000] px-4 py-1.5 rounded-full border">ĐĂNG KÝ</button>
-            <button class="bg-[#446084] px-4 py-1.5 rounded-full border">ĐĂNG NHẬP</button>
-        </div>
-    </header>
-
-    <!-- header -->
-    <header class="w-full z-50">
-        <div class="bg-[#292e3b] tracking-wide p-3.5 z-40">
-            <div class="max-w-[1080px] m-auto flex  justify-center md:justify-between items-center text-white font-semibold relative">
-                <div class="menu-icon absolute left-0 md:hidden text-2xl" onclick="OpenNav()">
-                    <ion-icon name="menu-outline" class="border p-1 rounded-md"></ion-icon>
-                </div>
+            <div class="text-white flex gap-3 justify-center font-semibold items-center md:hidden bg-gray-300 text-[13.5px]">
+                <button onclick="url()" onclick="url()" class="bg-[#b20000] w-24 py-1.5 rounded-full border">ĐĂNG KÝ</button>
+                <button onclick="url()" onclick="url()" class="bg-[#446084] w-24 py-1.5 rounded-full border">ĐĂNG NHẬP</button>
+            </div>
+        </header>
     
-                <div class="logo max-w-[200px] cursor-pointer">
-                    <img src="./images/logo.png">
-                </div>
-
-                <nav id="Nav">
-                    <div class="md:hidden flex justify-end text-3xl p-2 font-bold w-full h-full bg-gray-600 opacity-80" onclick="CloseNav()">
-                        <ion-icon name="close"></ion-icon>
+        <!-- header screen -->
+        <header class="w-full z-50">
+            <div class="bg-[#292e3b] tracking-wide p-3.5 z-40">
+                <div class="max-w-[1080px] m-auto flex  justify-center md:justify-between items-center text-white font-semibold relative">
+                    <div class="menu-icon absolute left-0 md:hidden text-2xl mt-1" onclick="OpenNav()">
+                        <ion-icon name="menu-outline" class="border p-0.5 rounded-md"></ion-icon>
                     </div>
-                    <ul class="h-full opacity-100 md:relative absolute top-0 z-50 flex flex-col gap-0 md:gap-5 md:flex-row md:p-5 text-[14.5px] bg-gray-50 text-gray-700 md:text-white md:bg-transparent divide-y divide-slate-200 *:py-4 *:md:py-0 *:md:border-none">
-                        <!-- search -->
-                        <div class="mt-10 md:hidden p-4 border-b">
-                            <div class="border flex justify-center items-center">
-                                <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner" placeholder="Tiềm Kiếm ..." required />
-                                <button class="bg-orange-500 text-white p-2">
-                                    <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- menu -->
-                        <li><a href="#" class="p-5 md:p-0 mt-20 md:mt-0 hover:text-yellow-300 duration-300">TRANG CHỦ</a></li>
-                        <li><a href="#" class="p-5 md:p-0 hover:text-yellow-300 duration-300">KHUYẾN MÃI</a></li>
-                        <li><a href="#" class="p-5 md:p-0 hover:text-yellow-300 duration-300">ĐĂNG KÝ</a></li>
-                        <li><a href="#" class="p-5 md:p-0 hover:text-yellow-300 duration-300">HƯỚNG DẪN</a></li>
-                        <li><a href="#" class="p-5 md:p-0 hover:text-yellow-300 duration-300">LIÊN HỆ</a></li>
-
-                        <!-- icon -->
-                        <div class="md:hidden mt-1">
-                            <div class="p-4">
-                                <button>  <ion-icon name="logo-facebook" class="text-4xl text-blue-800"></ion-icon> </button>
-                                <button>  <ion-icon name="logo-twitter" class="text-2xl p-1 text-white bg-indigo-800 border rounded-full"></ion-icon> </button>
-                                <button>  <ion-icon name="mail-outline" class="text-2xl p-1 text-white bg-gray-900 border rounded-full"></ion-icon> </button>
-                                <button>  <ion-icon name="call-outline" class="text-2xl p-1 text-white bg-green-500 border rounded-full"></ion-icon> </button>
-                                <button>  <ion-icon name="logo-pinterest" class="text-4xl text-red-500"></ion-icon> </button>
-                                <button>  <ion-icon name="logo-youtube" class="text-2xl p-1 text-white bg-red-500 border rounded-full"></ion-icon> </button>
-                                <button>  <ion-icon name="navigate" class="text-2xl p-1 text-white bg-blue-500 border rounded-full"></ion-icon> </button>
-                            </div>
-                        </div>
-                    </ul>
-                </nav>
+        
+                    <div onclick="url()" class="logo max-w-[200px] cursor-pointer">
+                        <img src="./images/logo.png">
+                    </div>
     
-                <div class="text-white hidden md:block text-[13.5px]">
-                    <button class="bg-red-600 px-4 py-1.5 rounded-full hover:bg-red-800 duration-300">ĐĂNG KÝ</button>
-                    <button class="bg-cyan-800 px-4 py-1.5 ml-2 rounded-full hover:bg-cyan-950 duration-300">ĐĂNG NHẬP</button>
+                    <nav id="Nav">
+                        <div class="md:hidden flex justify-end text-3xl p-2 font-bold w-full h-full bg-gray-600 opacity-80" onclick="CloseNav()">
+                            <ion-icon name="close"></ion-icon>
+                        </div>
+                        <ul class="h-full opacity-100 md:relative absolute top-0 z-50 flex flex-col gap-0 md:gap-5 md:flex-row md:p-5 text-[13px] lg:text-[14.5px] bg-gray-50 text-gray-700 md:text-white md:bg-transparent divide-y divide-slate-200 *:py-4 *:md:py-0 *:md:border-none *:cursor-pointer">
+                            <!-- search -->
+                            <div class="mt-10 md:hidden p-4 border-b">
+                                <div class="flex justify-center items-center">
+                                    <input type="search" class="p-2 focus:outline-none w-56 font-normal shadow-inner" placeholder="Tiềm Kiếm ..." required />
+                                    <button class="bg-orange-500 text-white py-2 px-3 rounded">
+                                        <ion-icon name="search" class="text-2xl flex justify-center items-center"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- menu -->
+                            <li onclick="url()" class="p-5 md:p-0 md:mt-0 hover:text-yellow-200 duration-300">TRANG CHỦ</a></li>
+                            <li onclick="url()" class="p-5 md:p-0 hover:text-yellow-200 duration-300">KHUYẾN MÃI</a></li>
+                            <li onclick="url()" class="p-5 md:p-0 hover:text-yellow-200 duration-300">ĐĂNG KÝ</a></li>
+                            <li onclick="url()" class="p-5 md:p-0 hover:text-yellow-200 duration-300">HƯỚNG DẪN</a></li>
+                            <li onclick="url()" class="p-5 md:p-0 hover:text-yellow-200 duration-300">LIÊN HỆ</a></li>
+    
+                            <!-- icon -->
+                            <div class="md:hidden mt-1">
+                                <div class="p-4">
+                                    <button onclick="url()"> <ion-icon name="logo-facebook" class="text-4xl text-blue-800"></ion-icon> </button>
+                                    <button onclick="url()"> <ion-icon name="logo-twitter" class="text-2xl p-1 text-white bg-indigo-800 border rounded-full"></ion-icon> </button>
+                                    <button onclick="url()"> <ion-icon name="mail-outline" class="text-2xl p-1 text-white bg-gray-900 border rounded-full"></ion-icon> </button>
+                                    <button onclick="url()"> <ion-icon name="call-outline" class="text-2xl p-1 text-white bg-green-500 border rounded-full"></ion-icon> </button>
+                                    <button onclick="url()"> <ion-icon name="logo-pinterest" class="text-4xl text-red-500"></ion-icon> </button>
+                                    <button onclick="url()"> <ion-icon name="logo-youtube" class="text-2xl p-1 text-white bg-red-500 border rounded-full"></ion-icon> </button>
+                                    <button onclick="url()"> <ion-icon name="navigate" class="text-2xl p-1 text-white bg-blue-500 border rounded-full"></ion-icon> </button>
+                                </div>
+                            </div>
+                        </ul>
+                    </nav>
+        
+                    <div class="text-white hidden md:block text-[13px]">
+                        <button onclick="url()" class="bg-red-600 w-24 py-1.5 rounded-full hover:bg-red-800 duration-300">ĐĂNG KÝ</button>
+                        <button onclick="url()" class="bg-cyan-800 w-24 py-1.5 ml-2 rounded-full hover:bg-cyan-950 duration-300">ĐĂNG NHẬP</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="text-white flex gap-3 justify-center font-semibold items-center md:hidden bg-gray-300 text-[13.5px]">
-            <button class="bg-[#b20000] px-4 py-1.5 rounded-full border">ĐĂNG KÝ</button>
-            <button class="bg-[#446084] px-4 py-1.5 rounded-full border">ĐĂNG NHẬP</button>
-        </div>
-    </header>
+            <div class="text-white flex gap-3 justify-center font-semibold items-center md:hidden bg-gray-300 text-[13.5px]">
+                <button onclick="url()" class="bg-[#b20000] w-24 py-1.5 rounded-full border">ĐĂNG KÝ</button>
+                <button onclick="url()" class="bg-[#446084] w-24 py-1.5 rounded-full border">ĐĂNG NHẬP</button>
+            </div>
+        </header>
+    </section>
 
-    <!-- main -->
+    <!--======== main ========-->
     <div class="main p-4 shadow">
         <!-- slider -->
         <section class="splide max-w-7xl m-auto py-10" aria-labelledby="carousel-heading">            
@@ -578,11 +581,12 @@
         </div>
     </div>
 
-    <!-- click to top -->
-    <button onclick="topScroll()" title="Go to top"><ion-icon name="chevron-up-circle-outline" class="fixed bottom-5 right-5 z-50 text-5xl text-yellow-500"></ion-icon></button>
+    <!--======== footer ========-->
+    <section class="footer">
+        <!-- click to top -->
+        <button onclick="topScroll()" title="Go to top"><ion-icon name="arrow-up-circle" class="fixed bottom-5 right-5 z-50 text-5xl text-yellow-500"></ion-icon></button>
 
-    <!-- footer -->
-    <div class="footer">
+        <!-- footer list -->
         <div class="mt-10 bg-[#292e3b] py-10 p-4">
             <div class="max-w-[1080px] m-auto grid md:grid-cols-3 gap-5 text-gray-200">
                 <div class="flex flex-col">
@@ -598,13 +602,12 @@
                     <span class="font-semibold block">VỀ CHÚNG TÔI</span>
                     <span class="w-8 h-1 bg-gray-400 block mt-2"></span>
                     <div class="flex flex-col gap-3 mt-5 *:text-start">
-                        <button class="hover:text-white duration-500">GIỚI THIỆU</button>
-                        <button class="hover:text-white duration-500">CHÍNH SÁCH BẢO MẬT</button>
-                        <button class="hover:text-white duration-500">ĐIỀU KHOẢN DỊCH VỤ</button>
-                        <button class="hover:text-white duration-500">LIÊN HỆ</button>
-                        <button class="hover:text-white duration-500">SITEMAP</button>
+                        <button onclick="url()" class="hover:text-white duration-500">GIỚI THIỆU</button>
+                        <button onclick="url()" class="hover:text-white duration-500">CHÍNH SÁCH BẢO MẬT</button>
+                        <button onclick="url()" class="hover:text-white duration-500">ĐIỀU KHOẢN DỊCH VỤ</button>
+                        <button onclick="url()" class="hover:text-white duration-500">LIÊN HỆ</button>
+                        <button onclick="url()" class="hover:text-white duration-500">SITEMAP</button>
                     </div>
-                
                 </div>
     
                 <div class="">
@@ -619,38 +622,14 @@
                 </div>
             </div>
         </div>
-
+        <!-- footer ban quyen -->
         <div class="p-3 bg-[#dd9933] text-gray-300">
             <span class="block text-center font-semibold"> <span class="font-normal">Copyright 2024 ©</span> Bản quyền HAY88.COM</span>
         </div>
-    </div>
+    </section>
 
     <!-- splide -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var splide = new Splide('.splide', {
-                perPage: 1,
-                gap: '20px',
-                type: 'loop',
-                autoplay: true,
-                interval: 2000,
-                snap: true,
-                // breakpoints: {
-                //     768: {
-                //         perPage: 2
-                //     },
-                //     448: {
-                //         perPage: 1
-                //     }
-                // }
-                // start: 2,
-                // pagination: false,
-            });
-            splide.mount();
-        });
-    </script>
-
     <script src="./script.js"></script>
 </body>
 </html>

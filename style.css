@@ -24,7 +24,7 @@ body {
     max-width: 1080px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 900px){
     nav{
         position: fixed !important;
         width: 0%;
@@ -38,18 +38,3 @@ body {
     }
 
 }
-
-
-
-.marquee {
-    animation: scrolling var(--marquee-time) linear infinite;
-  }
-  
-  .marquee:hover {
-    animation-play-state: paused;
-  }
-  
-  @keyframes scrolling {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-1 * var(--marquee-width))); }
-  }
